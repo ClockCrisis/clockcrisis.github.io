@@ -9,4 +9,4 @@ Reading, meditation, mindfulness.
 #### Photography
 Street, nature, black and white, architecture.
 
-My photography portfolio: [NPU Corner](clockcrisis.github.io/static/NPU_corner.pdf)
+My photography portfolio: [NPU Corner](https://github.com/ClockCrisis/clockcrisis.github.io/blob/main/static/assets/NPU_corner.pdf)

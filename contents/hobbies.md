@@ -8,7 +8,7 @@ Mountaineering, table tennis,running, swimming, badminton.
 </p>
 
 #### Photography
-Street, nature, Humanistic photography, black and white, architecture.
+Street, nature, humanistic, black and white, architecture.
 
 My photography portfolio: [NPU Corner](https://github.com/ClockCrisis/clockcrisis.github.io/blob/main/static/assets/NPU_corner.pdf)
 #### Spiritual Exploration

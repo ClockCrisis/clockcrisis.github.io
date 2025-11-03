@@ -1,5 +1,5 @@
 主页访问链接:https://clockcrisis.github.io/
-本项目在开源项目的基础上进行二次开发，感谢原作者.原项目地址：https://github.com/senli1073/senli1073.github.io
+弄着玩的,感谢原作者开源.原项目地址：https://github.com/senli1073/senli1073.github.io
 
 添加新模块流程:
 1. 在 `contents` 目录下创建一个新的 markdown 文件，例如 `hobbies.md`，并添加相应的内容和标题。

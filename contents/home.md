@@ -7,7 +7,7 @@ I am currently a Master's candidate in Software Engineering at the School of Sof
 
 Email: zsp@nwpu.edu.cn
 
-Bilibili: [ClockCrisis](https://space.bilibili.com/190755426?spm_id_from=333.1387.0.0)
+Bilibili: [小钟小同学](https://space.bilibili.com/190755426?spm_id_from=333.1387.0.0)
 
 
 #### Education

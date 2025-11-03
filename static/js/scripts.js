@@ -1,12 +1,42 @@
-
-
-const content_dir = 'contents/'
+let content_dir = 'contents/'
 const config_file = 'config.yml'
 // const section_names = ['home', 'hobbies','awards','publications']
 const section_names = ['home', 'hobbies','awards']
 
+function getLanguage() {
+    const params = new URLSearchParams(window.location.search);
+    let lang = params.get('lang');
+    if (!lang) {
+        lang = localStorage.getItem('lang') || 'en';
+    }
+    // normalize
+    lang = (lang === 'zh' || lang === 'en') ? lang : 'en';
+    return lang;
+}
+
+function setLanguage(lang) {
+    localStorage.setItem('lang', lang);
+    const url = new URL(window.location.href);
+    if (lang === 'en') {
+        url.searchParams.delete('lang');
+    } else {
+        url.searchParams.set('lang', lang);
+    }
+    window.location.href = url.toString();
+}
+
+window.toggleLanguage = function () {
+    const current = getLanguage();
+    setLanguage(current === 'zh' ? 'en' : 'zh');
+}
+
 
 window.addEventListener('DOMContentLoaded', event => {
+
+    // Determine language and content directory
+    const lang = getLanguage();
+    document.documentElement.lang = lang;
+    content_dir = (lang === 'zh') ? 'contents/zh/' : 'contents/';
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
@@ -30,6 +60,12 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+    // Update language toggle button label
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.textContent = (lang === 'zh') ? 'English' : '中文';
+    }
 
     // Yaml
     fetch(content_dir + config_file)

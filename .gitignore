@@ -1,2 +1,5 @@
 *.DS_Store
 
+# Ignore VS Code workspace files
+*.code-workspace
+
